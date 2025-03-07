@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="#about">Sobre</a>
+        <a href="#knowledge">Conhecimentos</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+    </nav>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <p>Projetos que desenvolvi</p>
+    </header>
+    
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Sou desenvolvedor com formação em Desenvolvimento de Software Multiplataforma na Fatec de Itaquera.</p>
+    </section>
+    
+    <section id="knowledge">
+        <h2>Conhecimentos</h2>
+        <div class="knowledge">
+            <div class="tech-card">HTML</div>
+            <div class="tech-card">CSS</div>
+            <div class="tech-card">JavaScript</div>
+            <div class="tech-card">PHP</div>
+            <div class="tech-card">Java</div>
+            <div class="tech-card">Kotlin</div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projetos</h2>
+        <div class="projects">
+            <div class="project-card" onclick="openProject('https://github.com/seu-usuario/projeto1')">
+                <h3>Projeto 1</h3>
+                <p>Descrição breve do projeto.</p>
+            </div>
+            <div class="project-card" onclick="openProject('https://github.com/seu-usuario/projeto2')">
+                <h3>Projeto 2</h3>
+                <p>Descrição breve do projeto.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contato</h2>
+        <div class="social-links">
+            <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/seu-usuario" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+    
+    <script>
+        function openProject(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
