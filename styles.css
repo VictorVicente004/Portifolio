@@ -37,6 +37,12 @@ header {
 section {
     padding: 40px 20px;
 }
+#about p{
+    text-align: justify;
+    font-size: medium;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
 
 .projects, .knowledge {
     display: flex;
